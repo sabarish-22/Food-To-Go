@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.dxc.entity.Restaurant;
 
-
+@Repository
 public interface RestaurantRepository extends JpaRepository<Restaurant, Long> {
 
 }

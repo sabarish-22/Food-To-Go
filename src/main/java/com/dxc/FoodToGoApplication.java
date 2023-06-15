@@ -7,9 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.dxc.controller","com.dxc.service"})
-@EntityScan("com.dxc.entity")
-@EnableJpaRepositories("package com.dxc.repository")
 public class FoodToGoApplication {
 
 	public static void main(String[] args) {

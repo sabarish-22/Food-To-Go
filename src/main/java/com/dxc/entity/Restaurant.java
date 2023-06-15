@@ -7,43 +7,56 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Restaurant")
 public class Restaurant {
-	
+
 	@Id
 	@GeneratedValue
-	@Column(name="Restid")
-	private Long Restid;
-	
-	@Column(name="Restname")
-	private String Restname;
-	
-	@Column(name="email")
+	private Long restaurantId;
+
+	private String restaurantName;
+
 	private String email;
 
-	
-	public Long getRestid() {
-		return Restid;
+	/**
+	 * @return the restaurantId
+	 */
+	public Long getRestaurantId() {
+		return restaurantId;
 	}
 
-	public void setRestid(Long restid) {
-		Restid = restid;
+	/**
+	 * @return the restaurantName
+	 */
+	public String getRestaurantName() {
+		return restaurantName;
 	}
 
-	public String getRestname() {
-		return Restname;
-	}
-
-	public void setRestname(String restname) {
-		Restname = restname;
-	}
-
+	/**
+	 * @return the email
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * @param restaurantId the restaurantId to set
+	 */
+	public void setRestaurantId(Long restaurantId) {
+		this.restaurantId = restaurantId;
+	}
+
+	/**
+	 * @param restaurantName the restaurantName to set
+	 */
+	public void setRestaurantName(String restaurantName) {
+		this.restaurantName = restaurantName;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
 }
